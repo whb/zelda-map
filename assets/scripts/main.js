@@ -14,6 +14,12 @@
     bounds: bounds
   }).addTo(map);
 
+  var overlay_tile = 'http://www.16p.top/Title/{z}_{x}_{y}.png';
+  var overlaylayer = L.tileLayer(overlay_tile, {
+    noWrap: true
+  }).addTo(map);
+
+
   var markerStyle = {};
   var visibleMarker = {};
   var css = "";
