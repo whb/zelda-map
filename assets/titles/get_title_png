@@ -1,0 +1,6 @@
+#!/bin/bash  
+
+while read url
+  do
+  wget -b "http://www.16p.top/Title/$url" -o /dev/null
+done < files.txt

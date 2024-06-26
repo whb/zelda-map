@@ -6,7 +6,9 @@
     maxBounds: bounds,
     maxBoundsViscosity: 1.0,
   }).setView([0, 0], 2);
-  var layer = L.tileLayer('assets/maps/{z}_{x}_{y}.png', {
+
+  var layer_tile = 'assets/maps/{z}_{x}_{y}.png';
+  var layer = L.tileLayer(layer_tile, {
     attribution: '&copy; David',
     minZoom: 2,
     maxZoom: 7,
@@ -14,9 +16,13 @@
     bounds: bounds
   }).addTo(map);
 
-  var overlay_tile = 'http://www.16p.top/Title/{z}_{x}_{y}.png';
+  //var overlay_tile = 'http://www.16p.top/Title/{z}_{x}_{y}.png';
+  var overlay_tile = 'assets/titles/{z}_{x}_{y}.png';
   var overlaylayer = L.tileLayer(overlay_tile, {
-    noWrap: true
+    minZoom: 2,
+    maxZoom: 6,
+    noWrap: true,
+    bounds: bounds
   }).addTo(map);
 
 
