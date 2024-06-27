@@ -125,7 +125,7 @@
         popupHtml += '<span class="markButton" onclick="markPoint(this)" data-key="' + key + '">标记</span>';
         popupHtml += '<a class="markButton" target="_blank" href="http://www.ign.com/search?q=' + encodeURIComponent(this.name) + '">IGN</a>';
         popupHtml += '<a class="markButton" target="_blank" href="http://www.polygon.com/search?q=' + encodeURIComponent(this.name) + '">Polygon</a>';
-        popupHtml += '<a class="markButton" target="_blank" href="https://c.gufen.ga/#q=' + encodeURIComponent(this.name) + '">Google</a>';
+        popupHtml += '<a class="markButton" target="_blank" href="https://www.google.com/#q=' + encodeURIComponent(this.name) + '">Google</a>';
         popupHtml += '<a class="markButton" target="_blank" href="http://www.baidu.com/baidu?word=' + encodeURIComponent(this.name) + '">百度</a>';
         popupHtml += '</div>';
         if (this.markerCategoryId === "1925") {
@@ -135,7 +135,7 @@
             popupHtml += '<div class="buttonContainer">';
             popupHtml += '<a class="markButton" target="_blank" href="https://zelda-bow.gamepedia.jp/?s=' + jName + '">GamePedia</a>';
             popupHtml += '<a class="markButton" target="_blank" href="http://wiki2.h1g.jp/zelda_bow/index.php?' + jName + '">H1G</a>';
-            popupHtml += '<a class="markButton" target="_blank" href="https://c.gufen.ga/#q=' + jName + '">Google</a>';
+            popupHtml += '<a class="markButton" target="_blank" href="https://www.google.com/#q=' + jName + '">Google</a>';
             popupHtml += '<a class="markButton" target="_blank" href="http://www.baidu.com/baidu?word=' + jName + '">百度</a>';
             popupHtml += '</div>';
           } else {
