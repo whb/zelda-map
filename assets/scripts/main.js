@@ -67,20 +67,11 @@
         }
       }
     } else {
-      if (event.ctrlKey) {
-        if (visibleMarker[type]) {
+       if (visibleMarker[type]) {
           visibleMarker[type] = false;
         } else {
           visibleMarker[type] = true;
         }
-      } else {
-        for (var p in visibleMarker) {
-          if (visibleMarker.hasOwnProperty(p)) {
-            visibleMarker[p] = false;
-          }
-        }
-        visibleMarker[type] = true;
-      }
     }
     refreshFilter();
     refreshMarker("filter");
