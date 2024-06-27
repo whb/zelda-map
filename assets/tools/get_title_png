@@ -3,4 +3,4 @@
 while read url
   do
   wget -b "http://www.16p.top/Title/$url" -o /dev/null
-done < files.txt
+done < files6.txt
