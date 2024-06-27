@@ -138,7 +138,7 @@ body {
   box-sizing: border-box;
 }
 #mapContainer .leaflet-marker-pane .markIcon:before {
-  font-size: 14px;
+  font-size: 15px;
   color: #fff;
   font-family: 'icomoon' !important;
   speak: none;
@@ -151,7 +151,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   vertical-align: middle;
   display: inline-block;
-  margin-top: -6px;
+  margin-top: -2px;
 }
 #mapContainer .leaflet-marker-pane .marked {
   background-color: #666 !important;
@@ -189,7 +189,7 @@ body {
 }
 .icon-BotW_Tower-of-Resurrection,
 .icon-BotW_Tower-of-Resurrection:after {
-  background-color: #24d8d8;
+  background-color: orange;
 }
 .icon-BotW_Village,
 .icon-BotW_Village:after {

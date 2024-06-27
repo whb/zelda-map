@@ -162,6 +162,7 @@
       }
     });
   }
+  toggleVisible("1923");
   toggleVisible("1925");
   var lastKeyworld = "";
   setInterval(function () {
