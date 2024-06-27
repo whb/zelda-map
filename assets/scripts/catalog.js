@@ -106,12 +106,6 @@ var markerCatalog = [{
     "color": "#8e72b9",
     "checked": true
   }, {
-    "id": "1922",
-    "name": "Town (House)",
-    "img": "BotW_Farm",
-    "color": "#8e72b9",
-    "checked": true
-  }, {
     "id": "1923",
     "name": "Sheikah Tower",
     "img": "BotW_Tower-of-Resurrection",
