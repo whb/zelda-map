@@ -153,6 +153,14 @@ body {
   display: inline-block;
   margin-top: -2px;
 }
+#mapContainer .leaflet-marker-pane .icon-BotW_Shrines:before {
+  color: #dff046;
+}
+#mapContainer .leaflet-marker-pane .icon-BotW_Tower-of-Resurrection:before {
+  font-size: 22px;
+  color: #dfe1f1;
+}
+
 #mapContainer .leaflet-marker-pane .marked {
   background-color: #666 !important;
 }
@@ -181,7 +189,7 @@ body {
 }
 .icon-BotW_Shrines,
 .icon-BotW_Shrines:after {
-  background-color: #0082c4;
+  background-color: transparent;
 }
 .icon-BotW_Stables,
 .icon-BotW_Stables:after {
@@ -189,7 +197,7 @@ body {
 }
 .icon-BotW_Tower-of-Resurrection,
 .icon-BotW_Tower-of-Resurrection:after {
-  background-color: orange;
+  background-color: transparent;
 }
 .icon-BotW_Village,
 .icon-BotW_Village:after {
