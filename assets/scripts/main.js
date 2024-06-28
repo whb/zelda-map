@@ -162,8 +162,11 @@
       }
     });
   }
+
   toggleVisible("1923");
   toggleVisible("1925");
+  toggleVisible("1938");
+
   var lastKeyworld = "";
   setInterval(function () {
     var newKeyword = $("#keywords").val();
