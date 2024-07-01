@@ -127,28 +127,18 @@
           this.markerCategoryId === "1938"
             ? this.name + " (" + this.enName + ")"
             : this.name; 
+
         var popupHtml = '<div class="popupContainer">';
         popupHtml += '<strong class="name">' + titleName + "</strong>";
+
         popupHtml += '<div class="buttonContainer">';
         popupHtml += '<span class="markButton" onclick="markPoint(this)" data-key="' + key + '">标记</span>';
         popupHtml += '<a class="markButton" target="_blank" href="https://www.google.com/search?q=' + encodeURIComponent(this.name) + '">Google</a>';
         popupHtml += '<a class="markButton" target="_blank" href="http://www.baidu.com/baidu?word=' + encodeURIComponent(this.name) + '">百度</a>';
         popupHtml += '</div>';
-        if (this.markerCategoryId === "1925") {
-          if (shrinesToJapanese[this.name]) {
-            var jName = shrinesToJapanese[this.name];
-            popupHtml += '<strong class="name">' + jName + '</strong>';
-            popupHtml += '<div class="buttonContainer">';
-            popupHtml += '<a class="markButton" target="_blank" href="https://zelda-bow.gamepedia.jp/?s=' + jName + '">GamePedia</a>';
-            popupHtml += '<a class="markButton" target="_blank" href="http://wiki2.h1g.jp/zelda_bow/index.php?' + jName + '">H1G</a>';
-            popupHtml += '<a class="markButton" target="_blank" href="https://www.google.com/#q=' + jName + '">Google</a>';
-            popupHtml += '<a class="markButton" target="_blank" href="http://www.baidu.com/baidu?word=' + jName + '">百度</a>';
-            popupHtml += '</div>';
-          } else {
-            console.log("no find shrine janpanese: " + this.name);
-          }
-        }
+        
         popupHtml += '</div>';
+
         var className = "mark-" + key;
         if (localStorage.getItem(key)) {
           className += " marked";
