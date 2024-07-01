@@ -122,8 +122,10 @@
         var titleName =
           this.markerCategoryId === "1921" ||
           this.markerCategoryId === "1923" ||
+          this.markerCategoryId === "1924" ||
           this.markerCategoryId === "1925" ||
           this.markerCategoryId === "1926" ||
+          this.markerCategoryId === "1927" ||
           this.markerCategoryId === "1938"
             ? this.name + " (" + this.enName + ")"
             : this.name; 
@@ -160,7 +162,9 @@
   }
 
   toggleVisible("1923");
+  toggleVisible("1924");
   toggleVisible("1925");
+  toggleVisible("1927");
   toggleVisible("1938");
 
   var lastKeyworld = "";
