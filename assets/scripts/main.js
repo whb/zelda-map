@@ -123,9 +123,7 @@
         popupHtml += '<strong class="name">' + this.name + '</strong>';
         popupHtml += '<div class="buttonContainer">';
         popupHtml += '<span class="markButton" onclick="markPoint(this)" data-key="' + key + '">标记</span>';
-        popupHtml += '<a class="markButton" target="_blank" href="http://www.ign.com/search?q=' + encodeURIComponent(this.name) + '">IGN</a>';
-        popupHtml += '<a class="markButton" target="_blank" href="http://www.polygon.com/search?q=' + encodeURIComponent(this.name) + '">Polygon</a>';
-        popupHtml += '<a class="markButton" target="_blank" href="https://www.google.com/#q=' + encodeURIComponent(this.name) + '">Google</a>';
+        popupHtml += '<a class="markButton" target="_blank" href="https://www.google.com/search?q=' + encodeURIComponent(this.name) + '">Google</a>';
         popupHtml += '<a class="markButton" target="_blank" href="http://www.baidu.com/baidu?word=' + encodeURIComponent(this.name) + '">百度</a>';
         popupHtml += '</div>';
         if (this.markerCategoryId === "1925") {
