@@ -119,8 +119,16 @@
       }
       if (visible) {
         var key = this.markerCategoryId + "-" + this.id + "-" + this.name.replace(/[^A-Z]/gi, "-");
+        var titleName =
+          this.markerCategoryId === "1921" ||
+          this.markerCategoryId === "1923" ||
+          this.markerCategoryId === "1925" ||
+          this.markerCategoryId === "1926" ||
+          this.markerCategoryId === "1938"
+            ? this.name + " (" + this.enName + ")"
+            : this.name; 
         var popupHtml = '<div class="popupContainer">';
-        popupHtml += '<strong class="name">' + this.name + ' ('+ this.enName + ')'+'</strong>';
+        popupHtml += '<strong class="name">' + titleName + "</strong>";
         popupHtml += '<div class="buttonContainer">';
         popupHtml += '<span class="markButton" onclick="markPoint(this)" data-key="' + key + '">标记</span>';
         popupHtml += '<a class="markButton" target="_blank" href="https://www.google.com/search?q=' + encodeURIComponent(this.name) + '">Google</a>';
