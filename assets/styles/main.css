@@ -348,7 +348,7 @@ body {
   color: #000;
   font-size: 16px;
   display: block;
-  font-weight: lighter;
+  font-weight: normal;
   font-family: HyliaSerif, '微软雅黑';
 }
 .popupContainer .name:nth-of-type(2) {
