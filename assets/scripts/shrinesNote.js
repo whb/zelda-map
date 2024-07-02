@@ -631,7 +631,7 @@ var shrinesNote = [
     ccontent: "力之试炼·中阶",
     required: "锁定的动能 主线任务",
     enemy: "侦查型守护者III",
-    trigger: "守护者切换",
+    trigger: "想见见守护者",
   },
   {
     categoryid: "2",
