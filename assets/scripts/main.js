@@ -75,6 +75,20 @@
   $("#switchType li").click(function () {
     if ($(this).attr("data-type")) toggleVisible($(this).attr("data-type"));
   });
+
+  //===============补充神庙数据=================
+  markerData.forEach((markerD) => {
+    patchShrineMaker(markerD);
+  });
+
+  function patchShrineMaker(m) {
+    if (m.markerCategoryId != "1925") return;
+    const shrine = shrinesNote.find((s) => s.ctitle === m.name);
+    m.trials = shrine ? shrine.ccontent : null;
+    m.trigger = shrine ? shrine.trigger : null;
+  }
+  //============================================
+
   function toggleVisible(type) {
     if (type === "all" || type === "none") {
       for (var o in visibleMarker) {
@@ -148,6 +162,13 @@
       popupHtml += "</div>";
     }
 
+    if (m.markerCategoryId === "1925" && m.trigger) {
+      popupHtml += '<div class="triggerContainer">';
+      popupHtml += '<span class="trigger">' + "触发任务：" + "</span>";
+      popupHtml += '<span class="trigger">' + m.trigger + "</span>";
+      popupHtml += "</div>";
+    }
+
     popupHtml += '<div class="buttonContainer">';
     popupHtml +=
       '<span class="markButton" onclick="markPoint(this)" data-key="' +
@@ -168,18 +189,13 @@
   }
 
   function isFounded(text, keyword) {
-    return (
-      text
-        .toLowerCase()
-        .replace(/^\s+|\s+$/g, "")
-        .indexOf(keyword.toLowerCase().replace(/^\s+|\s+$/, "")) !== -1
-    );
-  }
-
-  function patchShrineMaker(m) {
-    if (m.markerCategoryId != "1925") return;
-    const shrine = shrinesNote.find((s) => s.ctitle === m.name);
-    m.trials = shrine ? shrine.ccontent : null;
+    let result = text
+      ? text
+          .toLowerCase()
+          .replace(/^\s+|\s+$/g, "")
+          .indexOf(keyword.toLowerCase().replace(/^\s+|\s+$/, "")) !== -1
+      : false;
+    return result;
   }
 
   var cacheMarker = [];
@@ -195,13 +211,14 @@
         var keyword = $("#keywords").val();
         if (
           isFounded(markerD.name, keyword) ||
-          isFounded(markerD.description, keyword)
+          isFounded(markerD.description, keyword) ||
+          isFounded(markerD.trails, keyword) ||
+          isFounded(markerD.trigger, keyword)
         )
           visible = true;
       }
 
       if (visible) {
-        patchShrineMaker(markerD);
         var key = buildKey(markerD);
         var popupHtml = buildPopupContainer(markerD, key);
         var className = "mark-" + key;

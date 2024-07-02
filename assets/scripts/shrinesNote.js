@@ -6,7 +6,7 @@ var shrinesNote = [
     ctitle: "迪拉·玛神庙",
     ccontent: "迪拉·玛的祝福",
     treasure: "蛮族服",
-    task: "沙漠迷宫",
+    trigger: "沙漠迷宫",
   },
   {
     categoryid: "2",
@@ -61,7 +61,7 @@ var shrinesNote = [
     y: "1704",
     ctitle: "席罗·席拉神庙",
     ccontent: "漂流",
-    task: "不要践踏花儿",
+    trigger: "不要践踏花儿",
   },
   {
     categoryid: "2",
@@ -120,7 +120,7 @@ var shrinesNote = [
     y: "5243",
     ctitle: "米兹·耀神庙",
     ccontent: "古代三连击",
-    task: "两杆枪野兽",
+    trigger: "两杆枪野兽",
   },
   {
     categoryid: "2",
@@ -129,7 +129,7 @@ var shrinesNote = [
     ctitle: "塔诺·阿神庙",
     ccontent: "塔诺·阿的祝福",
     recommend: "寒冷抗性等级2",
-    task: "苹果汁的秘密",
+    trigger: "三棵杉树的秘密",
     treasure: "攀登靴",
   },
   {
@@ -148,7 +148,7 @@ var shrinesNote = [
     ctitle: "吉塔·萨米神庙",
     ccontent: "吉塔·萨米的祝福",
     recommend: "寒冷抗性等级2",
-    task: "智慧之泉",
+    trigger: "智慧之泉",
   },
   {
     categoryid: "2",
@@ -163,7 +163,7 @@ var shrinesNote = [
     y: "5007",
     ctitle: "卡姆·尤奥神庙",
     ccontent: "试炼之道",
-    task: "力量之泉的传说",
+    trigger: "力量之泉的传说",
   },
   {
     categoryid: "2",
@@ -221,7 +221,7 @@ var shrinesNote = [
     y: "8489",
     ctitle: "希·尤塔神庙",
     ccontent: "希·尤塔神庙的祝福",
-    task: "风之使者",
+    trigger: "风之使者",
   },
   {
     categoryid: "2",
@@ -230,7 +230,7 @@ var shrinesNote = [
     ctitle: "达·基基神庙",
     ccontent: "达·基基的祝福",
     required: "神兽鲁塔 主线任务",
-    task: "祭祀之歌",
+    trigger: "祭祀之歌",
   },
   {
     categoryid: "2",
@@ -239,7 +239,7 @@ var shrinesNote = [
     ctitle: "裘希·奥神庙",
     ccontent: "裘希·奥的祝福",
     required: "进入禁忌之城 主线任务",
-    task: "七个女英雄",
+    trigger: "七个女英雄",
   },
   {
     categoryid: "2",
@@ -262,7 +262,7 @@ var shrinesNote = [
     ctitle: "丘卡·纳塔神庙",
     ccontent: "丘卡·纳塔的祝福",
     treasure: "橡胶紧身衣",
-    task: "风暴之歌",
+    trigger: "风暴之歌",
   },
   {
     categoryid: "2",
@@ -287,7 +287,7 @@ var shrinesNote = [
     ctitle: "托·雅萨神庙",
     ccontent: "掩藏的秘密",
     treasure: "橡胶紧身服",
-    task: "雷电试炼",
+    trigger: "雷电试炼",
   },
   {
     categoryid: "2",
@@ -318,7 +318,7 @@ var shrinesNote = [
     ctitle: "兹纳·卡伊神庙",
     ccontent: "兹纳·卡伊的祝福",
     required: "另一位研究者 支线任务",
-    task: "骷髅之眼",
+    trigger: "骷髅的左眼",
   },
   {
     categoryid: "2",
@@ -349,7 +349,7 @@ var shrinesNote = [
     y: "9468",
     ctitle: "库古·齐德神庙",
     ccontent: "库古·齐德的祝福",
-    task: "被困黄昏",
+    trigger: "野外的试炼",
   },
   {
     categoryid: "2",
@@ -364,8 +364,8 @@ var shrinesNote = [
     x: "4262",
     y: "9052",
     ctitle: "利塔·兹摩神庙",
-    ccontent: "利塔格·祖摩的祝福",
-    task: "进入旋涡",
+    ccontent: "利塔·兹摩的祝福",
+    trigger: "进入旋涡",
   },
   {
     categoryid: "2",
@@ -379,9 +379,9 @@ var shrinesNote = [
     x: "7412",
     y: "9310",
     ctitle: "图·卡罗神庙",
-    ccontent: "图·卡·洛的祝福",
+    ccontent: "图·卡罗的祝福",
     treasure: "蛮族头盔",
-    task: "迷宫试炼",
+    trigger: "迷宫试炼",
   },
   {
     categoryid: "2",
@@ -389,7 +389,7 @@ var shrinesNote = [
     y: "7551",
     ctitle: "茨茨阿·尼玛神庙",
     ccontent: "力之试炼·高阶",
-    task: "力量之泉",
+    trigger: "力量之泉",
     enemy: "侦查型守护者IV",
   },
   {
@@ -397,7 +397,7 @@ var shrinesNote = [
     x: "3337",
     y: "6062",
     ctitle: "吉兹·卡夫伊神庙",
-    ccontent: "泽·卡朔机关",
+    ccontent: "吉兹·卡夫伊的机关",
   },
   {
     categoryid: "2",
@@ -413,7 +413,7 @@ var shrinesNote = [
     ctitle: "卡扎·托基神庙",
     ccontent: "卡扎·托基的祝福",
     treasure: "蛮族短裤",
-    task: "断崖的试炼",
+    trigger: "断崖的试炼",
   },
   {
     categoryid: "2",
@@ -458,7 +458,7 @@ var shrinesNote = [
     y: "574",
     ctitle: "基托·瓦瓦伊神庙",
     ccontent: "基托·瓦瓦伊的祝福",
-    task: "迷雾笼罩的神庙",
+    trigger: "迷雾笼罩的神庙",
   },
   {
     categoryid: "2",
@@ -475,7 +475,7 @@ var shrinesNote = [
     ctitle: "达科·塔瓦神庙",
     ccontent: "闪电之路",
     enemy: "侦查型守护者I",
-    task: "沙暴之眼",
+    trigger: "沙暴之眼",
   },
   {
     categoryid: "2",
@@ -496,7 +496,7 @@ var shrinesNote = [
     x: "7424",
     y: "-8039",
     ctitle: "托·库摩神庙",
-    ccontent: "托·奎摩的祝福",
+    ccontent: "托·库摩的祝福",
     note: "位于地下。洞穴的入口在西南面。",
   },
   {
@@ -506,7 +506,7 @@ var shrinesNote = [
     ctitle: "萨萨·卡伊神庙",
     ccontent: "力之试炼·中阶",
     enemy: "侦查型守护者III",
-    task: "暗影之印",
+    trigger: "去影子指示的地方",
   },
   {
     categoryid: "2",
@@ -631,7 +631,7 @@ var shrinesNote = [
     ccontent: "力之试炼·中阶",
     required: "锁定的动能 主线任务",
     enemy: "侦查型守护者III",
-    task: "守护者切换",
+    trigger: "守护者切换",
   },
   {
     categoryid: "2",
@@ -645,8 +645,8 @@ var shrinesNote = [
     x: "-4665",
     y: "1742",
     ctitle: "希·库乔夫神庙",
-    ccontent: "希·库乔夫神庙希·库乔夫的祝福",
-    task: "蟒蛇的下颚",
+    ccontent: "希·库乔夫的祝福",
+    trigger: "贪食巨蛇的龙",
   },
   {
     categoryid: "2",
@@ -662,7 +662,7 @@ var shrinesNote = [
     ctitle: "斯玛·萨玛神庙",
     ccontent: "斯玛·萨玛的祝福",
     recommend: "寒冷抗性等级2",
-    task: "雪峰之迷",
+    trigger: "雪峰之迷",
   },
   {
     categoryid: "2",
@@ -685,7 +685,7 @@ var shrinesNote = [
     y: "5329",
     ctitle: "古·阿齐托神庙",
     ccontent: "格拉·托尔之力",
-    task: "勇气岩挑战",
+    trigger: "勇气岩挑战",
   },
   {
     categoryid: "2",
@@ -702,7 +702,7 @@ var shrinesNote = [
     ctitle: "玛·卡亚神庙",
     ccontent: "快速思考",
     required: "锁定的动能 主线任务",
-    task: "破碎的丰碑",
+    trigger: "破碎的丰碑",
   },
   {
     categoryid: "2",
@@ -718,7 +718,7 @@ var shrinesNote = [
     y: "5269",
     ctitle: "塔瓦·吉努神庙",
     ccontent: "塔瓦·吉努的祝福",
-    task: "巨人三兄弟",
+    trigger: "巨人三兄弟",
   },
   {
     categoryid: "2",
@@ -726,7 +726,7 @@ var shrinesNote = [
     y: "-5937",
     ctitle: "密·苏神庙",
     ccontent: "斯玛·萨玛的祝福",
-    task: "完美的饮品",
+    trigger: "完美的饮品",
   },
   {
     categoryid: "2",
@@ -735,7 +735,7 @@ var shrinesNote = [
     ctitle: "拉丘·乌罗神庙",
     ccontent: "拉丘·乌罗的祝福",
     required: "神兽纳波利斯 主线任务",
-    task: "不败的英雄",
+    trigger: "不败的英雄",
   },
   {
     categoryid: "2",
@@ -743,7 +743,7 @@ var shrinesNote = [
     y: "-4008",
     ctitle: "究尼·希神庙",
     ccontent: "究尼·希机关",
-    task: "意志的试炼",
+    trigger: "意志的试炼",
   },
   {
     categoryid: "2",
@@ -767,7 +767,7 @@ var shrinesNote = [
     ctitle: "基玛·兹斯神庙",
     ccontent: "延迟的谜题",
     recommend: "寒冷抗性等级1或者是炎热抗性等级1。",
-    task: "沉默的女剑客",
+    trigger: "沉默的女剑客",
   },
   {
     categoryid: "2",
@@ -797,7 +797,7 @@ var shrinesNote = [
     y: "-3780",
     ctitle: "希·达哥兹神庙",
     ccontent: "平行移动",
-    task: "两个环",
+    trigger: "两个环",
   },
   {
     categoryid: "2",
@@ -806,7 +806,7 @@ var shrinesNote = [
     ctitle: "米达·罗基神庙",
     ccontent: "力之试炼·中阶",
     enemy: "侦查型守护者III",
-    task: "血月之下",
+    trigger: "血月之下",
   },
   {
     categoryid: "2",
@@ -814,7 +814,7 @@ var shrinesNote = [
     y: "-7700",
     ctitle: "基哈·乌神庙",
     ccontent: "基哈·乌的祝福",
-    task: "绝壁花纹",
+    trigger: "绝壁花纹",
   },
   {
     categoryid: "2",
@@ -845,7 +845,7 @@ var shrinesNote = [
     ctitle: "沃力达·诺神庙",
     ccontent: "大炮",
     required: "神兽梅多 主线任务",
-    task: "古代利特之歌",
+    trigger: "古代利特之歌",
   },
   {
     categoryid: "2",
@@ -854,7 +854,7 @@ var shrinesNote = [
     ctitle: "乌塔·多神庙",
     ccontent: "蜿蜒的通道",
     required: "神兽梅多 主线任务",
-    task: "在鸣鸟的巢穴颂唱",
+    trigger: "在鸣鸟的巢穴颂唱",
   },
   {
     categoryid: "2",
@@ -878,14 +878,14 @@ var shrinesNote = [
     y: "-7248",
     ctitle: "妙斯·希诺神庙",
     ccontent: "力之试炼·高阶",
-    task: "山中之鸟",
+    trigger: "高耸入云的山上有棵参天大树",
   },
   {
     categoryid: "2",
     x: "6436",
     y: "-5995",
     ctitle: "夏达·阿达神庙",
-    ccontent: "露出的红色",
+    ccontent: "隐藏的红色墙壁",
   },
   {
     categoryid: "2",
@@ -931,7 +931,7 @@ var shrinesNote = [
     y: "4607",
     ctitle: "塔·姆尔神庙",
     ccontent: "穿越火焰",
-    task: "驿站风景",
+    trigger: "驿站风景",
   },
   {
     categoryid: "2",
@@ -939,7 +939,7 @@ var shrinesNote = [
     y: "4146",
     ctitle: "克哈·拉玛神庙",
     ccontent: "贪婪山脉",
-    task: "兄弟的烧烤",
+    trigger: "兄弟的烧烤",
   },
   {
     categoryid: "2",
