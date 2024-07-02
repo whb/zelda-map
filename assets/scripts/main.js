@@ -147,7 +147,6 @@
       m.markerCategoryId === "1923" ||
       m.markerCategoryId === "1924" ||
       m.markerCategoryId === "1925" ||
-      m.markerCategoryId === "1926" ||
       m.markerCategoryId === "1927" ||
       m.markerCategoryId === "1938"
         ? m.name + " (" + m.enName + ")"
