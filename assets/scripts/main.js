@@ -92,6 +92,7 @@
     refreshFilter();
     refreshMarker("filter");
   }
+
   function refreshFilter() {
     var allVisible = true;
     var allHidden = true;
@@ -119,79 +120,91 @@
       }
     }
   }
+
+
+  function buildKey(m) {
+    return (
+      m.markerCategoryId +
+      "-" +
+      m.id +
+      "-" +
+      m.name.replace(/[^A-Z]/gi, "-")
+    );
+  }
+
+  function buildPopupContainer(m, key) {
+    let titleName =
+      m.markerCategoryId === "1921" ||
+      m.markerCategoryId === "1923" ||
+      m.markerCategoryId === "1924" ||
+      m.markerCategoryId === "1925" ||
+      m.markerCategoryId === "1926" ||
+      m.markerCategoryId === "1927" ||
+      m.markerCategoryId === "1938"
+        ? m.name + " (" + m.enName + ")"
+        : m.name;
+
+    let popupHtml = '<div class="popupContainer">';
+    popupHtml += '<strong class="name">' + titleName + "</strong>";
+
+    popupHtml += '<div class="buttonContainer">';
+    popupHtml +=
+      '<span class="markButton" onclick="markPoint(this)" data-key="' +
+      key +
+      '">标记</span>';
+    popupHtml +=
+      '<a class="markButton" target="_blank" href="https://www.google.com/search?q=' +
+      encodeURIComponent(m.name) +
+      '">Google</a>';
+    popupHtml +=
+      '<a class="markButton" target="_blank" href="http://www.baidu.com/baidu?word=' +
+      encodeURIComponent(m.name) +
+      '">百度</a>';
+    popupHtml += "</div>";
+
+    popupHtml += "</div>";
+    return popupHtml;
+  }
+
   var cacheMarker = [];
   function refreshMarker(from) {
-    $.each(cacheMarker, function () {
-      this.remove();
-    });
+    cacheMarker.forEach((marker) => marker.remove());
     cacheMarker = [];
-    $.each(markerData, function () {
+
+    markerData.forEach((markerD) => {
       var visible = false;
-      if (from === "filter" && visibleMarker[this.markerCategoryId])
+      if (from === "filter" && visibleMarker[markerD.markerCategoryId])
         visible = true;
       if (from === "search") {
         var keyword = $("#keywords").val();
         if (
-          this.name
+          markerD.name
             .toLowerCase()
             .replace(/^\s+|\s+$/g, "")
             .indexOf(keyword.toLowerCase().replace(/^\s+|\s+$/, "")) !== -1
         )
           visible = true;
         if (
-          this.description
+          markerD.description
             .toLowerCase()
             .replace(/^\s+|\s+$/g, "")
             .indexOf(keyword.toLowerCase().replace(/^\s+|\s+$/, "")) !== -1
         )
           visible = true;
       }
+
       if (visible) {
-        var key =
-          this.markerCategoryId +
-          "-" +
-          this.id +
-          "-" +
-          this.name.replace(/[^A-Z]/gi, "-");
-        var titleName =
-          this.markerCategoryId === "1921" ||
-          this.markerCategoryId === "1923" ||
-          this.markerCategoryId === "1924" ||
-          this.markerCategoryId === "1925" ||
-          this.markerCategoryId === "1926" ||
-          this.markerCategoryId === "1927" ||
-          this.markerCategoryId === "1938"
-            ? this.name + " (" + this.enName + ")"
-            : this.name;
-
-        var popupHtml = '<div class="popupContainer">';
-        popupHtml += '<strong class="name">' + titleName + "</strong>";
-
-        popupHtml += '<div class="buttonContainer">';
-        popupHtml +=
-          '<span class="markButton" onclick="markPoint(this)" data-key="' +
-          key +
-          '">标记</span>';
-        popupHtml +=
-          '<a class="markButton" target="_blank" href="https://www.google.com/search?q=' +
-          encodeURIComponent(this.name) +
-          '">Google</a>';
-        popupHtml +=
-          '<a class="markButton" target="_blank" href="http://www.baidu.com/baidu?word=' +
-          encodeURIComponent(this.name) +
-          '">百度</a>';
-        popupHtml += "</div>";
-
-        popupHtml += "</div>";
-
+        var key = buildKey(markerD);
+        var popupHtml = buildPopupContainer(markerD, key);
         var className = "mark-" + key;
+
         if (localStorage.getItem(key)) {
           className += " marked";
         }
         className += " markIcon";
-        className += " icon-" + markerStyle[this.markerCategoryId];
-        var marker = L.marker([this.y, this.x], {
-          title: this.name,
+        className += " icon-" + markerStyle[markerD.markerCategoryId];
+        var marker = L.marker([markerD.y, markerD.x], {
+          title: markerD.name,
           icon: L.divIcon({
             className: className,
             iconSize: [20, 20],
