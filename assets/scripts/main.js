@@ -121,14 +121,9 @@
     }
   }
 
-
   function buildKey(m) {
     return (
-      m.markerCategoryId +
-      "-" +
-      m.id +
-      "-" +
-      m.name.replace(/[^A-Z]/gi, "-")
+      m.markerCategoryId + "-" + m.id + "-" + m.name.replace(/[^A-Z]/gi, "-")
     );
   }
 
@@ -166,6 +161,15 @@
     return popupHtml;
   }
 
+  function isFounded(text, keyword) {
+    return (
+      text
+        .toLowerCase()
+        .replace(/^\s+|\s+$/g, "")
+        .indexOf(keyword.toLowerCase().replace(/^\s+|\s+$/, "")) !== -1
+    );
+  }
+
   var cacheMarker = [];
   function refreshMarker(from) {
     cacheMarker.forEach((marker) => marker.remove());
@@ -178,17 +182,8 @@
       if (from === "search") {
         var keyword = $("#keywords").val();
         if (
-          markerD.name
-            .toLowerCase()
-            .replace(/^\s+|\s+$/g, "")
-            .indexOf(keyword.toLowerCase().replace(/^\s+|\s+$/, "")) !== -1
-        )
-          visible = true;
-        if (
-          markerD.description
-            .toLowerCase()
-            .replace(/^\s+|\s+$/g, "")
-            .indexOf(keyword.toLowerCase().replace(/^\s+|\s+$/, "")) !== -1
+          isFounded(markerD.name, keyword) ||
+          isFounded(markerD.description, keyword)
         )
           visible = true;
       }
