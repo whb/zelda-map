@@ -170,6 +170,13 @@
     );
   }
 
+  function patchShrineMaker(m) {
+    if (m.markerCategoryId != "1925") return;
+    const shrine = shrinesNote.find((s) => s.ctitle === m.name);
+    if(!shrine)    console.log(m.name);
+    m.task = shrine ? shrine.ccontent : null;
+  }
+
   var cacheMarker = [];
   function refreshMarker(from) {
     cacheMarker.forEach((marker) => marker.remove());
@@ -189,6 +196,7 @@
       }
 
       if (visible) {
+        patchShrineMaker(markerD);
         var key = buildKey(markerD);
         var popupHtml = buildPopupContainer(markerD, key);
         var className = "mark-" + key;
