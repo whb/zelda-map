@@ -142,6 +142,12 @@
     let popupHtml = '<div class="popupContainer">';
     popupHtml += '<strong class="name">' + titleName + "</strong>";
 
+    if (m.markerCategoryId === "1925") {
+      popupHtml += '<div class="trialsContainer">';
+      popupHtml += '<span class="trials">' + m.trials + "</span>";
+      popupHtml += "</div>";
+    }
+
     popupHtml += '<div class="buttonContainer">';
     popupHtml +=
       '<span class="markButton" onclick="markPoint(this)" data-key="' +
@@ -173,8 +179,7 @@
   function patchShrineMaker(m) {
     if (m.markerCategoryId != "1925") return;
     const shrine = shrinesNote.find((s) => s.ctitle === m.name);
-    if(!shrine)    console.log(m.name);
-    m.task = shrine ? shrine.ccontent : null;
+    m.trials = shrine ? shrine.ccontent : null;
   }
 
   var cacheMarker = [];

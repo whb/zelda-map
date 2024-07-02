@@ -127,7 +127,7 @@ var shrinesNote = [
     x: "-3372",
     y: "8371",
     ctitle: "塔诺·阿神庙",
-    ccontent: "塔诺·阿神庙的祝福",
+    ccontent: "塔诺·阿的祝福",
     recommend: "寒冷抗性等级2",
     task: "苹果汁的秘密",
     treasure: "攀登靴",
@@ -316,9 +316,9 @@ var shrinesNote = [
     x: "6848",
     y: "6646",
     ctitle: "兹纳·卡伊神庙",
-    ccontent: "祖娜·卡伊的祝福",
+    ccontent: "兹纳·卡伊的祝福",
     required: "另一位研究者 支线任务",
-    task: "骷髅之眼</p>",
+    task: "骷髅之眼",
   },
   {
     categoryid: "2",
@@ -365,7 +365,7 @@ var shrinesNote = [
     y: "9052",
     ctitle: "利塔·兹摩神庙",
     ccontent: "利塔格·祖摩的祝福",
-    task: "进入旋涡</p>",
+    task: "进入旋涡",
   },
   {
     categoryid: "2",
@@ -381,7 +381,7 @@ var shrinesNote = [
     ctitle: "图·卡罗神庙",
     ccontent: "图·卡·洛的祝福",
     treasure: "蛮族头盔",
-    task: "迷宫试炼</p>",
+    task: "迷宫试炼",
   },
   {
     categoryid: "2",
@@ -497,7 +497,7 @@ var shrinesNote = [
     y: "-8039",
     ctitle: "托·库摩神庙",
     ccontent: "托·奎摩的祝福",
-    note: "位于地下。洞穴的入口在西南面。</p>",
+    note: "位于地下。洞穴的入口在西南面。",
   },
   {
     categoryid: "2",
@@ -530,14 +530,14 @@ var shrinesNote = [
     y: "41",
     ctitle: "库恩·希达吉神庙",
     ccontent:
-      "库恩·希达吉的祝福<b>要求:</b></p><ul><li> 开始 英雄之剑 主线任务</li><li> 开始克洛克试炼</li></ul><p><b>神庙任务:</b> 预见试炼",
+      "库恩·希达吉的祝福<br /><b>要求:</b></p><ul><li> 开始 英雄之剑 主线任务</li><li> 开始克洛克试炼</li></ul><p><b>神庙任务:</b> 预见试炼",
   },
   {
     categoryid: "2",
     x: "4330",
     y: "943",
     ctitle: "基耀·乌神庙",
-    ccontent: "命运之星<b>要求:</b>无{0}",
+    ccontent: "命运之星",
   },
   {
     categoryid: "2",
@@ -545,7 +545,7 @@ var shrinesNote = [
     y: "-50",
     ctitle: "达·乔卡席神庙",
     ccontent:
-      "达·乔卡席的祝福<b>要求:</b></p><ul><li> 开始 英雄之剑 主线任务</li><li> 开始克洛克试炼</li></ul><p><b>神庙任务:</b> 迷途的朝圣者们",
+      "达·乔卡席的祝福<br /><b>要求:</b></p><ul><li> 开始 英雄之剑 主线任务</li><li> 开始克洛克试炼</li></ul><p><b>神庙任务:</b> 迷途的朝圣者们",
   },
   {
     categoryid: "2",
@@ -553,7 +553,7 @@ var shrinesNote = [
     y: "1671",
     ctitle: "玛姆·拉诺神庙",
     ccontent:
-      "玛姆·拉诺的祝福<b>要求:</b></p><ul><li> 开始 英雄之剑 主线任务</li><li> 开始克洛克试炼</li></ul><p><b>神庙任务:</b> 林木试炼",
+      "玛姆·拉诺的祝福<br /><b>要求:</b></p><ul><li> 开始 英雄之剑 主线任务</li><li> 开始克洛克试炼</li></ul><p><b>神庙任务:</b> 林木试炼",
   },
   {
     categoryid: "2",
@@ -685,7 +685,7 @@ var shrinesNote = [
     y: "5329",
     ctitle: "古·阿齐托神庙",
     ccontent: "格拉·托尔之力",
-    task: "勇气岩挑战</p>",
+    task: "勇气岩挑战",
   },
   {
     categoryid: "2",
@@ -878,7 +878,7 @@ var shrinesNote = [
     y: "-7248",
     ctitle: "妙斯·希诺神庙",
     ccontent: "力之试炼·高阶",
-    task: "山中之鸟</p>",
+    task: "山中之鸟",
   },
   {
     categoryid: "2",
@@ -931,7 +931,7 @@ var shrinesNote = [
     y: "4607",
     ctitle: "塔·姆尔神庙",
     ccontent: "穿越火焰",
-    task: "驿站风景</p>",
+    task: "驿站风景",
   },
   {
     categoryid: "2",
@@ -939,7 +939,7 @@ var shrinesNote = [
     y: "4146",
     ctitle: "克哈·拉玛神庙",
     ccontent: "贪婪山脉",
-    task: "兄弟的烧烤</p>",
+    task: "兄弟的烧烤",
   },
   {
     categoryid: "2",

@@ -372,6 +372,15 @@ body {
   color: deepskyblue;
 }
 
+.trialsContainer {
+  font-size: 14px;
+  line-height: 36px;
+}
+
+.trialsContainer .trials {
+  color: blue;
+}
+
 .logo {
   display: inline-block;
   width: 110px;
