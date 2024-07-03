@@ -230,7 +230,7 @@ var shrinesNote = [
     ctitle: "达·基基神庙",
     ccontent: "达·基基的祝福",
     required: "神兽鲁塔 主线任务",
-    trigger: "应届的祭祀诗",
+    trigger: "英杰的祭祀诗",
   },
   {
     categoryid: "2",
