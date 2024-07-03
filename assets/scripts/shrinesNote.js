@@ -199,7 +199,7 @@ var shrinesNote = [
     x: "-374",
     y: "1656",
     ctitle: "卡亚·米瓦神庙",
-    ccontent: null,
+    ccontent: "盾从水中现",
   },
   {
     categoryid: "2",
