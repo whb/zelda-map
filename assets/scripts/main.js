@@ -3,12 +3,15 @@
     new L.LatLng(-49.875, 34.25),
     new L.LatLng(-206, 221)
   );
+
+  let center = new L.LatLng(-150,128);
+
   var map = L.map("mapContainer", {
     crs: L.CRS.Simple,
     attributionControl: false,
     maxBounds: bounds,
     maxBoundsViscosity: 1.0,
-  }).setView([0, 0], 3);
+  }).setView(center, 4);
 
   var layer_tile = "assets/maps/{z}_{x}_{y}.png";
   var layer = L.tileLayer(layer_tile, {
