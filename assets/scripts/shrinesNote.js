@@ -192,7 +192,7 @@ var shrinesNote = [
     x: "2615",
     y: "9414",
     ctitle: "卡·姆神庙",
-    ccontent: "落与升",
+    ccontent: "上天下地",
   },
   {
     categoryid: "2",
