@@ -8,7 +8,7 @@
     attributionControl: false,
     maxBounds: bounds,
     maxBoundsViscosity: 1.0,
-  }).setView([0, 0], 2);
+  }).setView([0, 0], 3);
 
   var layer_tile = "assets/maps/{z}_{x}_{y}.png";
   var layer = L.tileLayer(layer_tile, {
