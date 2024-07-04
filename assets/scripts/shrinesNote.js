@@ -213,7 +213,7 @@ var shrinesNote = [
     x: "-929",
     y: "3208",
     ctitle: "达塔·库斯神庙",
-    ccontent: "沉沦的舀取",
+    ccontent: "沉没的援手",
   },
   {
     categoryid: "2",
