@@ -170,7 +170,7 @@ var shrinesNote = [
     x: "1031",
     y: "6644",
     ctitle: "奈兹·耀玛神庙",
-    ccontent: "极限之力",
+    ccontent: "推出之力",
   },
   {
     categoryid: "2",
@@ -206,7 +206,7 @@ var shrinesNote = [
     x: "756",
     y: "3014",
     ctitle: "协莫·拉塔神庙",
-    ccontent: "光之速度",
+    ccontent: "光芒铭刻时间之际",
   },
   {
     categoryid: "2",
