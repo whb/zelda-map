@@ -246,7 +246,7 @@ var shrinesNote = [
     x: "-5634",
     y: "-7629",
     ctitle: "古科·齐塞神庙",
-    ccontent: "整体印象",
+    ccontent: "5个铁块",
   },
   {
     categoryid: "2",
@@ -420,7 +420,7 @@ var shrinesNote = [
     x: "7521",
     y: "-3340",
     ctitle: "夏·格玛神庙",
-    ccontent: "旋转与锁定",
+    ccontent: "移动和固定",
   },
   {
     categoryid: "2",
@@ -442,7 +442,7 @@ var shrinesNote = [
     x: "4653",
     y: "4125",
     ctitle: "达卡·卡神庙",
-    ccontent: "失控的飞翔",
+    ccontent: "续航时间",
   },
   {
     categoryid: "2",
@@ -567,7 +567,7 @@ var shrinesNote = [
     x: "3041",
     y: "3638",
     ctitle: "丘·拉姆席神庙",
-    ccontent: "平衡的方式",
+    ccontent: "平衡之力",
   },
   {
     categoryid: "2",
@@ -750,7 +750,7 @@ var shrinesNote = [
     x: "-2448",
     y: "-6171",
     ctitle: "库伊·塔卡神庙",
-    ccontent: "融化的冰蜥蜴",
+    ccontent: "融化的冰",
   },
   {
     categoryid: "2",
@@ -821,7 +821,7 @@ var shrinesNote = [
     x: "827",
     y: "-8248",
     ctitle: "卡·奥裘神庙",
-    ccontent: "风之引导",
+    ccontent: "御风者",
     enemy: "侦查型守护者I, 侦查型守护者II",
   },
   {
@@ -836,7 +836,7 @@ var shrinesNote = [
     x: "3149",
     y: "-5662",
     ctitle: "多恩巴·塔神庙",
-    ccontent: "蓄力与释放",
+    ccontent: "孜孜不倦",
   },
   {
     categoryid: "2",
@@ -852,7 +852,7 @@ var shrinesNote = [
     x: "3448",
     y: "-8026",
     ctitle: "乌塔·多神庙",
-    ccontent: "蜿蜒的通道",
+    ccontent: "风之塔",
     required: "神兽梅多 主线任务",
     trigger: "在鸣鸟的巢穴颂唱",
   },
@@ -900,7 +900,7 @@ var shrinesNote = [
     x: "6449",
     y: "-4748",
     ctitle: "拉·库阿神庙",
-    ccontent: "延伸之力",
+    ccontent: "枪刺之力",
     enemy: "侦查型守护者II",
   },
   {
@@ -915,14 +915,14 @@ var shrinesNote = [
     x: "5110",
     y: "-3435",
     ctitle: "利·摩纳神庙",
-    ccontent: "引导清风",
+    ccontent: "挡风之物",
   },
   {
     categoryid: "2",
     x: "-4840",
     y: "-3589",
     ctitle: "吉诺·耀神庙",
-    ccontent: "不停移动",
+    ccontent: "动与静的选择",
     enemy: "侦查型守护者I",
   },
   {
@@ -930,16 +930,16 @@ var shrinesNote = [
     x: "1878",
     y: "4607",
     ctitle: "塔·姆尔神庙",
-    ccontent: "穿越火焰",
-    trigger: "驿站风景",
+    ccontent: "传播火焰",
+    trigger: "驿站的风景画",
   },
   {
     categoryid: "2",
     x: "4079",
     y: "4146",
     ctitle: "克哈·拉玛神庙",
-    ccontent: "贪婪山脉",
-    trigger: "兄弟的烧烤",
+    ccontent: "欲望之坡",
+    trigger: "弟弟在何方",
   },
   {
     categoryid: "2",
