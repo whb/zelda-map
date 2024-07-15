@@ -154,8 +154,15 @@ body {
   margin-top: -2px;
 }
 #mapContainer .leaflet-marker-pane .icon-BotW_Shrines:before {
+  color: #87CEFA;
+}
+
+#mapContainer .leaflet-marker-pane .icon-BotW_Shrines.marked:before {
   color: #dff046;
 }
+
+
+
 #mapContainer .leaflet-marker-pane .icon-BotW_Tower-of-Resurrection:before {
   font-size: 22px;
   color: #dfe1f1;
