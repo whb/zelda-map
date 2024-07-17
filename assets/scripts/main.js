@@ -254,16 +254,17 @@
 
   var lastKeyworld = "";
   setInterval(function () {
-    var newKeyword = $("#keywords").val();
-    if (newKeyword !== lastKeyworld) {
-      if (newKeyword) {
-        lastKeyworld = newKeyword;
-        refreshMarker("search");
-      } else {
-        refreshMarker("filter");
-      }
+    let newKeyword = $("#keywords").val();
+    if (newKeyword === lastKeyworld) return;
+    
+    lastKeyworld = newKeyword;
+    if (newKeyword) {
+      refreshMarker("search");
+    } else {
+      refreshMarker("filter");
     }
   }, 500);
+  
   $("#clearKeyword").click(function () {
     $("#keywords").val("");
   });
